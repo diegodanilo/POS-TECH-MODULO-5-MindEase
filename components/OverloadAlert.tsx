@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, Pressable, Animated } from 'react-native';
-import { AlertTriangle, Coffee, X } from 'lucide-react-native';
-import * as Haptics from 'expo-haptics';
 import Colors from '@/constants/colors';
+import * as Haptics from 'expo-haptics';
+import { AlertTriangle, Coffee, X } from 'lucide-react-native';
+import React, { useEffect, useRef } from 'react';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 interface OverloadAlertProps {
   visible: boolean;

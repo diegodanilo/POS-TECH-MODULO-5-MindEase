@@ -1,9 +1,9 @@
-import React, { useRef } from 'react';
-import { View, Text, StyleSheet, Pressable, Animated } from 'react-native';
-import { Layers, Minus, Grid3x3 } from 'lucide-react-native';
-import * as Haptics from 'expo-haptics';
 import Colors from '@/constants/colors';
 import { CognitiveComplexity } from '@/types/mindease';
+import * as Haptics from 'expo-haptics';
+import { Grid3x3, Layers, Minus } from 'lucide-react-native';
+import React, { useRef } from 'react';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 interface ComplexitySelectorProps {
   value: CognitiveComplexity;

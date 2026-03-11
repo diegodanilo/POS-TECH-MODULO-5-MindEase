@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { View, Text, StyleSheet, Pressable, Animated } from 'react-native';
-import { Wind } from 'lucide-react-native';
-import * as Haptics from 'expo-haptics';
 import Colors from '@/constants/colors';
+import * as Haptics from 'expo-haptics';
+import { Wind } from 'lucide-react-native';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 interface BreathingWidgetProps {
   compact?: boolean;

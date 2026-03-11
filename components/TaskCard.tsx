@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
-import { View, Text, StyleSheet, Pressable, Animated } from 'react-native';
-import { CheckCircle, Circle, Clock, Zap } from 'lucide-react-native';
-import * as Haptics from 'expo-haptics';
 import Colors from '@/constants/colors';
-import { Task, TaskCognitiveLoad } from '@/types/mindease';
 import { useCognitiveProfile } from '@/contexts/CognitiveProfileContext';
+import { Task, TaskCognitiveLoad } from '@/types/mindease';
+import * as Haptics from 'expo-haptics';
+import { CheckCircle, Circle, Clock, Zap } from 'lucide-react-native';
+import React, { useRef } from 'react';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 interface TaskCardProps {
   task: Task;

@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, StyleSheet, Pressable, Animated } from 'react-native';
-import { Play, Pause, RotateCcw, Trophy } from 'lucide-react-native';
-import * as Haptics from 'expo-haptics';
 import Colors from '@/constants/colors';
 import { useCognitiveProfile } from '@/contexts/CognitiveProfileContext';
+import * as Haptics from 'expo-haptics';
+import { Pause, Play, RotateCcw, Trophy } from 'lucide-react-native';
+import React, { useEffect, useRef, useState } from 'react';
+import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 
 interface FocusTimerProps {
   onStart: () => void;

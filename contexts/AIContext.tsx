@@ -3,12 +3,12 @@ import { generateCoachingMessage, generatePersonalizedInsights } from '@/service
 import { cognitiveAnalytics } from '@/services/ai/cognitiveAnalytics';
 import { patternRecognition } from '@/services/ai/patternRecognition';
 import {
-    AIConfiguration,
-    BehavioralPattern,
-    CognitiveMetricsSnapshot,
-    ComplexityAdjustment,
-    DailyCognitiveReport,
-    OverloadPrediction,
+  AIConfiguration,
+  BehavioralPattern,
+  CognitiveMetricsSnapshot,
+  ComplexityAdjustment,
+  DailyCognitiveReport,
+  OverloadPrediction,
 } from '@/types/ai';
 import createContextHook from '@nkzw/create-context-hook';
 import AsyncStorage from '@react-native-async-storage/async-storage';

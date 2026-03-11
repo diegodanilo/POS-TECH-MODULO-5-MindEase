@@ -1,7 +1,7 @@
-import { Tabs } from 'expo-router';
-import { Home, Target, ListTodo, User } from 'lucide-react-native';
-import React from 'react';
 import Colors from '@/constants/colors';
+import { Tabs } from 'expo-router';
+import { Brain, Home, ListTodo, Target, User } from 'lucide-react-native';
+import React from 'react';
 
 export default function TabLayout() {
   return (
@@ -40,6 +40,13 @@ export default function TabLayout() {
         options={{
           title: 'Tarefas',
           tabBarIcon: ({ color, size }) => <ListTodo size={size} color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="dashboard"
+        options={{
+          title: 'IA Dashboard',
+          tabBarIcon: ({ color, size }) => <Brain size={size} color={color} />,
         }}
       />
       <Tabs.Screen

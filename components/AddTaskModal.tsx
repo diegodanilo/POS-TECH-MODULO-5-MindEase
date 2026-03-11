@@ -1,20 +1,20 @@
+import Colors from '@/constants/colors';
+import { useCognitiveProfile } from '@/contexts/CognitiveProfileContext';
+import { TaskCognitiveLoad } from '@/types/mindease';
+import * as Haptics from 'expo-haptics';
+import { Plus, X, Zap } from 'lucide-react-native';
 import React, { useState } from 'react';
 import {
-  View,
-  Text,
-  StyleSheet,
-  TextInput,
-  Pressable,
-  Modal,
-  ScrollView,
   KeyboardAvoidingView,
+  Modal,
   Platform,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  View,
 } from 'react-native';
-import { X, Zap, Plus } from 'lucide-react-native';
-import * as Haptics from 'expo-haptics';
-import Colors from '@/constants/colors';
-import { TaskCognitiveLoad } from '@/types/mindease';
-import { useCognitiveProfile } from '@/contexts/CognitiveProfileContext';
 
 interface AddTaskModalProps {
   visible: boolean;

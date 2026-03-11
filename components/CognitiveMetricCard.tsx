@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, Animated } from 'react-native';
 import Colors from '@/constants/colors';
 import { useCognitiveProfile } from '@/contexts/CognitiveProfileContext';
+import React, { useEffect, useRef } from 'react';
+import { Animated, StyleSheet, Text, View } from 'react-native';
 
 interface CognitiveMetricCardProps {
   title: string;

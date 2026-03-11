@@ -1,11 +1,13 @@
+import { AIProvider } from '@/contexts/AIContext';
+import { AIIntegrationProvider } from '@/contexts/AIIntegrationContext';
+import { CognitiveEngineProvider } from '@/contexts/CognitiveEngineContext';
+import { CognitiveProfileProvider } from '@/contexts/CognitiveProfileContext';
+import { TaskProvider } from '@/contexts/TaskContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import React, { useEffect } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { CognitiveProfileProvider } from '@/contexts/CognitiveProfileContext';
-import { CognitiveEngineProvider } from '@/contexts/CognitiveEngineContext';
-import { TaskProvider } from '@/contexts/TaskContext';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -23,14 +25,17 @@ export default function RootLayout() {
   useEffect(() => {
     SplashScreen.hideAsync();
   }, []);
-
-  return (
+   return (
     <QueryClientProvider client={queryClient}>
       <GestureHandlerRootView>
         <CognitiveProfileProvider>
           <CognitiveEngineProvider>
             <TaskProvider>
-              <RootLayoutNav />
+              <AIProvider>
+                <AIIntegrationProvider>
+                  <RootLayoutNav />
+                </AIIntegrationProvider>
+              </AIProvider>
             </TaskProvider>
           </CognitiveEngineProvider>
         </CognitiveProfileProvider>
